@@ -1,0 +1,6 @@
+# ninja log v5
+0	1084	1609232005	CMakeFiles/ecgcardalgorithm.dir/src/main/cpp/JniHelper.cpp.o	f9fff49923a0f159
+1085	1137	1609232005	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libecgcardalgorithm.so	ac3d2e488f4e04c2
+2	1303	1609310451	CMakeFiles/ecgcardalgorithm.dir/src/main/cpp/JniHelper.cpp.o	f9fff49923a0f159
+1303	1575	1609310451	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libecgcardalgorithm.so	ac3d2e488f4e04c2
+2	216	1609310502	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libecgcardalgorithm.so	ac3d2e488f4e04c2

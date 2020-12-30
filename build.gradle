@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion rootProject.ext.android.compileSdkVersion
+
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++11 -frtti -fexceptions"
+            }
+        }
+    }
+
+    buildTypes {
+        def logProguard = rootProject.ext.android.get('logProguard')
+        release {
+            minifyEnabled enable.toBoolean()
+            if (logProguard != null && new File(logProguard).exists()) {
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro', logProguard
+            } else {
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            }
+        }
+
+        debug {
+            minifyEnabled enable.toBoolean()
+            if (logProguard != null && new File(logProguard).exists()) {
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro', logProguard
+            } else {
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.proton.ecg.decrypt:decrypt:1.0.0'
+    implementation 'com.proton.ecg.encrypt:encrypt:1.0.1'
+}
+
+if (enable.toBoolean()) {
+    File file = new File('/Users/wangmengsi/Desktop/upload.gradle')
+    if (file.exists()) {
+        apply from: file.absolutePath
+    }
+}
