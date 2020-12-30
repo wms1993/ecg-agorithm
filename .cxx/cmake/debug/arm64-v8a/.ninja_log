@@ -1,9 +1,0 @@
-# ninja log v5
-0	563	1609232005	CMakeFiles/ecgcardalgorithm.dir/src/main/cpp/JniHelper.cpp.o	9f54664de5cefadb
-564	648	1609232005	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libecgcardalgorithm.so	25e89799de08b680
-3	1379	1609298931	CMakeFiles/ecgcardalgorithm.dir/src/main/cpp/JniHelper.cpp.o	9f54664de5cefadb
-1379	1578	1609298932	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libecgcardalgorithm.so	25e89799de08b680
-3	1256	1609307202	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libecgcardalgorithm.so	25e89799de08b680
-1	82	1609308348	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libecgcardalgorithm.so	25e89799de08b680
-2	98	1609310451	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libecgcardalgorithm.so	25e89799de08b680
-2	101	1609310503	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libecgcardalgorithm.so	25e89799de08b680

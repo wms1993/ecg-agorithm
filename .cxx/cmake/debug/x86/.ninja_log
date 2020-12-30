@@ -1,4 +1,0 @@
-# ninja log v5
-0	557	1609310452	CMakeFiles/ecgcardalgorithm.dir/src/main/cpp/JniHelper.cpp.o	d7d3eaba5d7f90ab
-558	806	1609310452	../../../../build/intermediates/cmake/debug/obj/x86/libecgcardalgorithm.so	92fc59f66557858
-1	93	1609310503	../../../../build/intermediates/cmake/debug/obj/x86/libecgcardalgorithm.so	92fc59f66557858
